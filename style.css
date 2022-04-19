@@ -7,13 +7,13 @@
     --mv-title: 24px;
     --mv-header: 32px;
 
-      /* text size for desktops*/
-      --dp-smallest: 16px;
-      --dp-details: 18px;
-      --dp-body-text: 20px;
-      --dp-subtitle: 22px;
-      --dp-title: 34px;
-      --dp-header: 42px;
+    /* text size for desktops*/
+    --dp-smallest: 16px;
+    --dp-details: 18px;
+    --dp-body-text: 20px;
+    --dp-subtitle: 22px;
+    --dp-title: 34px;
+    --dp-header: 42px;
 }
 
 *, *::before, *::after {
@@ -34,18 +34,12 @@ body {
 
 .side {
     background-color: #C06010;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-}
-
-.side > :nth-child(n) {
-    word-break: break-all;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.side > .side--group {
+.side > .side__group {
     gap: 10px;
 }
 
@@ -53,20 +47,20 @@ body {
     display: grid;
 }
 
-.main > .main--a {
+.main > .main__a {
     background-color: #424642;
 }
 
-.main > .main--b {
+.main > .main__b {
     background-color: #536162;
 }
 
-.side > .side--hamburger {
+.side > .side__hamburger {
 
 }
 
 /* Cellphone older and Tablets younger */
-@media screen and (min-width: 481px ) {
+@media only screen and (min-width: 481px ) {
 
     /* body {
         grid-template-columns: 20% 80%;
@@ -80,25 +74,29 @@ body {
 /* Tablets older, Laptops and Desktops */
 @media only screen and (min-width: 770px){
     body {
+        grid-template-rows: initial;
         grid-template-columns: 7% 93%;
     }
 
     .side {
-        /* height: 100%; */
-        grid-template-rows: 1fr 80% 1fr;
+        flex-direction: row;
+        align-content: space-between;
+        /* justify-content: center; */
+        /* flex-direction: row;
+        grid-template-rows: 1fr 80% 1fr; */
     }
     
-    .side > .side--group {
+    .side > .side__group {
         flex-direction: column;
     }
     
     .main {
         grid-template-columns: 20% 80%;
     }
-    
-    .main > .main--a {
+
+    .main > .main__a {
     }
     
-    .main > .main--b {
+    .main > .main__b {
     }
 }
