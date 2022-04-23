@@ -37,9 +37,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 3px 3px;
 }
 
-.side > .side__group {
+.side__group {
     gap: 10px;
 }
 
@@ -47,16 +48,41 @@ body {
     display: grid;
 }
 
-.main > .main__a {
+.main__a {
     background-color: #424642;
 }
 
-.main > .main__b {
+.main__b {
     background-color: #536162;
 }
 
-.side > .side__hamburger {
+.side__hamburger {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 
+.side__hamburger .side__hamburger--line {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #ecf0f1;
+    margin-block: 10px;
+    border-radius: 4px;
+    transition: transform .5s, opacity .25s;
+}
+
+.side__hamburger.active .side__hamburger--line:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.side__hamburger.active .side__hamburger--line:nth-child(2) {
+    opacity: 0;
+}
+
+.side__hamburger.active .side__hamburger--line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
 }
 
 /* Cellphone older and Tablets younger */
