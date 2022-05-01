@@ -37,23 +37,87 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 3px;
+    padding: 3px 10px;
 }
 
 .side__group {
+    display: flex;
     gap: 10px;
+}
+
+.icon{
+    color: #5f4;
+    max-width: 25px;
+    max-height: 25px;
 }
 
 .main {
     display: grid;
 }
 
+.title {
+    color: #fff;
+    position: relative;
+    animation: left-rigth 1.5s;
+}
+
+.text {
+    position: relative;
+    animation: rigth-left 1.5s;
+}
+
+@keyframes rigth-left {
+    0% {right: -500px; }
+  100%   {right: 0px;}
+}
+
+/* @keyframes identifier {
+    0% {
+        color: #FFA62B;
+    } 
+    20% {
+        color: #EDE7E3;
+    }
+    40% {
+        color: #82C0CC ;
+    }
+    60% {
+        color: #489FB5;
+    }
+    80% {
+        color: #16697A;
+    }
+    
+    100% {
+        color: #166975;
+    }
+} */
+
+@keyframes left-rigth {
+    0% {left: -500px; }
+  100%   {left: 0px;}
+}
+
 .main__a {
-    background-color: #424642;
+    background: #536162 url(../assets/imgs/me.jpg) no-repeat right top fixed;
+    font-size: var(--mv-body-text);
+    height: 300px;
+    padding: 10px;
+    position: relative;
+}
+
+.main__a--2 {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .main__b {
     background-color: #536162;
+    font-size: var(--mv-body-text);
+    padding: 10px;
 }
 
 .side__hamburger {
@@ -65,12 +129,18 @@ body {
 
 .side__hamburger .side__hamburger--line {
     display: block;
-    width: 40px;
+    width: 30px;
     height: 3px;
-    background-color: #ecf0f1;
+    background-color: #000;
     margin-block: 10px;
-    border-radius: 4px;
+    border-radius: 3px;
     transition: transform .5s, opacity .25s;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .side__hamburger.active .side__hamburger--line:nth-child(1) {
@@ -87,10 +157,6 @@ body {
 
 /* Cellphone older and Tablets younger */
 @media only screen and (min-width: 481px ) {
-
-    /* body {
-        grid-template-columns: 20% 80%;
-    } */
 
     .main {
         grid-template-columns: 20% 80%;
