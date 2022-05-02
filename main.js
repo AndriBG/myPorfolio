@@ -5,3 +5,6 @@ const menuIsActive = () => {
 }
 
 hamburgerMenu.addEventListener('click', menuIsActive);
+
+
+//   window.addEventListener('scroll', (e) => {e.})
