@@ -208,15 +208,15 @@ body {
 
     .side {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-content: space-between;
         justify-content: center;
         /* grid-template-rows: 1fr 80% 1fr; */
 
 
-        align-items:unset;
+        /* align-items:unset; */
 
-        /* justify-content: space-between; */
+        justify-content: space-between;
         /* padding: 3px 10px; */
     }
 
