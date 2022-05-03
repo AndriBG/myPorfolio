@@ -207,20 +207,10 @@ body {
     }
 
     .side {
-        display: flex;
         flex-direction: column;
         align-content: space-between;
-        justify-content: center;
-        /* grid-template-rows: 1fr 80% 1fr; */
-
-
-        /* align-items:unset; */
-
         justify-content: space-between;
-        /* padding: 3px 10px; */
     }
-
-    
     
     .side > .side__group {
         flex-direction: column;
@@ -230,13 +220,9 @@ body {
         grid-template-columns: 20% 80%;
     }
 
-    .main > .main__a {
-        
+    .main > .main__a {   
         background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center ;
         background-size: cover;
         height: 100%;
-    }
-    
-    .main > .main__b {
     }
 }
