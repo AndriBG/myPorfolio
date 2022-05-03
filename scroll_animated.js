@@ -41,12 +41,12 @@ const elements2 = [].filter.call(
 elements.forEach(element => intersectionObserver.observe(element));
 elements2.forEach(element => intersectionObserver.observe(element));
 
-(function() {
-  var $body = document.body;
-  $body.bind('scroll', function() {
-      // "Desactivar" el scroll horizontal
-      if ($body.scrollLeft() !== 0) {
-          $body.scrollLeft(0);
-      }
-  });
-});
+// (function() {
+//   var $body = document.body;
+//   $body.bind('scroll', function() {
+//       // "Desactivar" el scroll horizontal
+//       if ($body.scrollLeft() !== 0) {
+//           $body.scrollLeft(0);
+//       }
+//   });
+// });
