@@ -14,6 +14,23 @@
     --dp-subtitle: 22px;
     --dp-title: 34px;
     --dp-header: 42px;
+
+    /* family fonts */
+    /* --poppins-light: url(); */
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(./assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
+    /* font-style: normal;
+    font-weight: normal; */
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(./assets/fonts/poppins/Poppins-Bold.ttf) format('truetype');
+    /* font-style: normal;
+    font-weight: normal; */
 }
 
 *, *::before, *::after {
@@ -49,7 +66,7 @@ body {
 .social-networks {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 0.7rem;
 }
 
 .icon {
@@ -63,10 +80,12 @@ body {
 
 .title {
     color: #fff;
+    font-family: poppins-bold;
 }
 
 .text {
     color: #eee;
+    font-family: poppins-light;
 }
 
 .left {
@@ -139,9 +158,9 @@ body {
 }
 
 .main__b {
-    background-color: #536162;
+    background-color: #244446;
     font-size: var(--mv-body-text);
-    padding: 10px;
+    padding: 40px;
 }
 
 .side__hamburger {
@@ -190,7 +209,7 @@ body {
     }
 
     .main > .main__a {
-        height: 100vh;
+        height: 100%;
         background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center ;
         background-size: cover;
     }
@@ -224,6 +243,5 @@ body {
     .main > .main__a {   
         background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center ;
         background-size: cover;
-        height: 100%;
     }
 }
