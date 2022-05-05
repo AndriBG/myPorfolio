@@ -20,17 +20,20 @@
 }
 
 @font-face {
-    font-family: poppins-light;
-    src: url(./assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
+    font-family: poppins-regular;
+    src: url(./assets/fonts/poppins/Poppins-Regular.ttf) format('truetype');
     /* font-style: normal;
     font-weight: normal; */
 }
 
 @font-face {
+    font-family: poppins-light;
+    src: url(./assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
     font-family: poppins-bold;
     src: url(./assets/fonts/poppins/Poppins-Bold.ttf) format('truetype');
-    /* font-style: normal;
-    font-weight: normal; */
 }
 
 *, *::before, *::after {
@@ -48,6 +51,7 @@ body {
     overflow-x: hidden;
     display: grid;
     grid-template-rows: 10% 90%;
+    font-family: poppins-regular;
 }
 
 .side {
@@ -81,10 +85,11 @@ body {
 .title {
     color: #fff;
     font-family: poppins-bold;
+    margin-top: 0;
 }
 
 .text {
-    color: #eee;
+    color: #ddd;
     font-family: poppins-light;
 }
 
