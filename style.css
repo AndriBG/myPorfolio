@@ -19,6 +19,25 @@
     /* --poppins-light: url(); */
 }
 
+
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Display movil */
+body {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    /* font-family: poppins-regular; */
+}
+
 @font-face {
     font-family: poppins-regular;
     src: url(assets/fonts/poppins/Poppins-Regular.ttf) format('truetype');
@@ -36,23 +55,7 @@
     src: url(assets/fonts/poppins/Poppins-Bold.ttf) format('truetype');
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-} 
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* Display movil */
-body {
-    overflow-x: hidden;
-    display: grid;
-    grid-template-rows: 10% 90%;
-    font-family: poppins-regular;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 .side {
     background-color: #C06010;
@@ -84,7 +87,8 @@ body {
 
 .title {
     color: #fff;
-    font-family: poppins-bold;
+    font-family: Poppins;
+    /* font-family: Poppins-Bold; */
     margin-top: 0;
 }
 
