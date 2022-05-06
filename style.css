@@ -21,19 +21,19 @@
 
 @font-face {
     font-family: poppins-regular;
-    src: url(./assets/fonts/poppins/Poppins-Regular.ttf) format('truetype');
+    src: url(assets/fonts/poppins/Poppins-Regular.ttf) format('truetype');
     /* font-style: normal;
     font-weight: normal; */
 }
 
 @font-face {
     font-family: poppins-light;
-    src: url(./assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
+    src: url(assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
 }
 
 @font-face {
     font-family: poppins-bold;
-    src: url(./assets/fonts/poppins/Poppins-Bold.ttf) format('truetype');
+    src: url(assets/fonts/poppins/Poppins-Bold.ttf) format('truetype');
 }
 
 *, *::before, *::after {
