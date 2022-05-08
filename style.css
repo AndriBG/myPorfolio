@@ -34,28 +34,19 @@ html, body {
 body {
     overflow-x: hidden;
     display: grid;
+    font-family: Poppins;
     grid-template-rows: 10% 90%;
     /* font-family: poppins-regular; */
 }
 
-@font-face {
+/* @font-face {
     font-family: poppins-regular;
     src: url(assets/fonts/poppins/Poppins-Regular.ttf) format('truetype');
-    /* font-style: normal;
-    font-weight: normal; */
-}
+    font-style: normal;
+    font-weight: normal;
+} */
 
-@font-face {
-    font-family: poppins-light;
-    src: url(assets/fonts/poppins/Poppins-Light.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: poppins-bold;
-    src: url(assets/fonts/poppins/Poppins-Bold.ttf) format('truetype');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
 
 .side {
     background-color: #C06010;
@@ -87,14 +78,13 @@ body {
 
 .title {
     color: #fff;
-    font-family: Poppins;
-    /* font-family: Poppins-Bold; */
+    font-weight: bold !important;
     margin-top: 0;
 }
 
 .text {
     color: #ddd;
-    font-family: poppins-light;
+    font-weight: 100;
 }
 
 .left {
@@ -148,7 +138,7 @@ body {
 
 
 .main__a {
-    background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center fixed;
+    background: #53616211 url(./assets/imgs/me-no-back.png) no-repeat;
     /* background-size:cover; */
     font-size: var(--mv-body-text);
     height: 350px;
