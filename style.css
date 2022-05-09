@@ -144,8 +144,9 @@ body {
 
 
 .main__a {
-    background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center fixed;
-    /* background-size:cover; */
+    background: #536162 url(./assets/imgs/background-img.jpg) no-repeat center fixed;
+    background-size:cover;
+    /* object-fit: cover; */
     font-size: var(--mv-body-text);
     height: 350px;
     position: relative;
@@ -215,8 +216,8 @@ body {
 
     .main > .main__a {
         height: 100%;
-        background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center ;
-        background-size: cover;
+        /* background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center ; */
+        /* background-size: cover; */
     }
 }
 
@@ -246,7 +247,8 @@ body {
     }
 
     .main > .main__a {   
-        background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center ;
-        background-size: cover;
+        /* background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center ; */
+        /* background-size: cover; */
+        background-attachment: unset;
     }
 }
