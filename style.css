@@ -84,7 +84,7 @@ body {
 
 .text {
     color: #ddd;
-    font-weight: 100;
+    font-weight: 250;
 }
 
 .left {
@@ -152,7 +152,7 @@ body {
 }
 
 .main__a--2 {
-    bottom: 0;
+    bottom: 15px;
     left: 0;
     position: absolute;
     text-align: center;
@@ -246,5 +246,9 @@ body {
         /* background: #536162 url(./assets/imgs/me-no-back.png) no-repeat center ; */
         /* background-size: cover; */
         background-attachment: unset;
+    }
+
+    .main .main__a--2 {
+        bottom: 3px;
     }
 }
