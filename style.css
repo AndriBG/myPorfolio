@@ -168,6 +168,9 @@ body {
     font-size: var(--mv-body-text);
     padding: 40px;
 }
+.main__b > :first-child {
+    margin-bottom: 100px;
+}
 
 .side__hamburger {
     background-color: transparent;
