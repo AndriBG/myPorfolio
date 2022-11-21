@@ -53,9 +53,13 @@ html, body {
 body {
     overflow-x: hidden;
     display: grid;
-    font-family: Poppins;
+    font-family: Lato;
     grid-template-rows: 10% 90%;
     /* font-family: poppins-regular; */
+}
+
+*::selection {
+    background-color: firebrick;
 }
 
 /* @font-face {
@@ -68,7 +72,7 @@ body {
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
 
 .side {
-    background-color: #21AA93;
+    background-color: #C69749;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,7 +146,7 @@ body {
 }
 
 .main__a {
-    background: #536162 url(./assets/imgs/karo-grabowska.jpg) no-repeat center fixed;
+    background: #282A3A url(./assets/imgs/karo-grabowska.jpg) no-repeat center fixed;
     background-size:cover;
     /* object-fit: cover; */
     /* background: #53616211 url(./assets/imgs/me-no-back.png) no-repeat; */
@@ -164,7 +168,7 @@ body {
 }
 
 .main__b {
-    background-color: #01676B;
+    background-color: #282A3A;
     font-size: var(--mv-body-text);
     padding: 40px;
 }
