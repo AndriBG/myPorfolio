@@ -53,13 +53,17 @@ html, body {
 body {
     overflow-x: hidden;
     display: grid;
-    font-family: Lato;
-    grid-template-rows: 10% 90%;
+    /* font-family: Lato; */
+    grid-template-rows: auto 95%;
     /* font-family: poppins-regular; */
 }
 
-*::selection {
-    background-color: firebrick;
+p::selection, h2::selection, h3::selection, li::selection {
+    background-color: #0f1125;
+}
+
+.main__a--2 :nth-child(n)::selection, .icon::selection {
+    background-color: #ddd;
 }
 
 /* @font-face {
@@ -72,7 +76,7 @@ body {
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
 
 .side {
-    background-color: #C69749;
+    background-color: #212156;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -110,6 +114,7 @@ body {
 .icon {
     max-width: 25px;
     max-height: 25px;
+    /* color: #ddd; */
 }
 
 .main {
@@ -146,8 +151,8 @@ body {
 }
 
 .main__a {
-    background: #282A3A url(./assets/imgs/karo-grabowska.jpg) no-repeat center fixed;
-    background-size:cover;
+    background: #282A3A url(./assets/imgs/perfil_andri.jpg) no-repeat center;
+    background-size: cover;
     /* object-fit: cover; */
     /* background: #53616211 url(./assets/imgs/me-no-back.png) no-repeat; */
     /* background-size:cover; */
@@ -187,7 +192,7 @@ body {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #000;
+    background-color: #fff;
     margin-block: 10px;
     border-radius: 3px;
     transition: transform .5s, opacity .25s;
@@ -232,7 +237,7 @@ body {
 @media only screen and (min-width: 770px){
     body {
         grid-template-rows: initial;
-        grid-template-columns: 5% 95%;
+        grid-template-columns: 4% 96%;
     }
 
     .services {
@@ -250,7 +255,7 @@ body {
     }
     
     .main {
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 30% 70%;
     }
 
     .main > .main__a {   
